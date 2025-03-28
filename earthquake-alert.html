@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthquake Alert - Myanmar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #quake-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        #quake-list li {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        #city-select {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Earthquake Alert for Myanmar</h1>
+    
+    <label for="city-select">Select a City:</label>
+    <select id="city-select">
+        <option value="">-- Select a City --</option>
+        <option value="Yangon">Yangon</option>
+        <option value="Mandalay">Mandalay</option>
+        <option value="Naypyidaw">Naypyidaw</option>
+        <option value="Bagan">Bagan</option>
+        <option value="Taunggyi">Taunggyi</option>
+        <option value="Mawlamyine">Mawlamyine</option>
+        <option value="Bago">Bago</option>
+        <option value="Pathein">Pathein</option>
+        <option value="Monywa">Monywa</option>
+        <option value="Myitkyina">Myitkyina</option>
+        <option value="Meiktila">Meiktila</option>
+        <option value="Magway">Magway</option>
+        <option value="Sittwe">Sittwe</option>
+        <option value="Dawei">Dawei</option>
+        <option value="Pyay">Pyay</option>
+        <option value="Hpa-An">Hpa-An</option>
+        <option value="Lashio">Lashio</option>
+        <option value="Pakokku">Pakokku</option>
+        <option value="Myeik">Myeik</option>
+        <option value="Kalay">Kalay</option>
+        <option value="Loikaw">Loikaw</option>
+        <option value="Thandwe">Thandwe</option>
+        <option value="Kengtung">Kengtung</option>
+        <option value="Yenangyaung">Yenangyaung</option>
+        <option value="Shwebo">Shwebo</option>
+        <option value="Sagaing">Sagaing</option>
+        <option value="Hakha">Hakha</option>
+        <option value="Tachileik">Tachileik</option>
+        <option value="Nyaung-U">Nyaung-U</option>
+        <option value="Bilin">Bilin</option>
+        <option value="Kyaukse">Kyaukse</option>
+        <option value="Thaton">Thaton</option>
+        <option value="Maubin">Maubin</option>
+        <option value="Mudon">Mudon</option>
+        <option value="Pyin Oo Lwin">Pyin Oo Lwin</option>
+        <option value="Thanbyuzayat">Thanbyuzayat</option>
+        <option value="Minbu">Minbu</option>
+        <option value="Kyaikto">Kyaikto</option>
+        <option value="Daik-U">Daik-U</option>
+        <option value="Myawaddy">Myawaddy</option>
+        <option value="Kanbalu">Kanbalu</option>
+        <option value="Mong Hsat">Mong Hsat</option>
+        <option value="Pantanaw">Pantanaw</option>
+        <option value="Thayet">Thayet</option>
+        <option value="Aunglan">Aunglan</option>
+        <option value="Namhkan">Namhkan</option>
+        <option value="Mong Nai">Mong Nai</option>
+        <option value="Letpadan">Letpadan</option>
+        <option value="Bhamo">Bhamo</option>
+    </select>
+
+    <h2>Recent Earthquakes</h2>
+    <ul id="quake-list">
+        <!-- Earthquake data will be displayed here -->
+    </ul>
+
+    <script src="earthquake-alert.js"></script>
+</body>
+</html>
